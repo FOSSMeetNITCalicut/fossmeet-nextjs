@@ -1,0 +1,32 @@
+.container{
+    min-height: 75px; 
+    padding: 0 0.75rem;
+    position: fixed;
+    top: 0rem;
+    z-index: 1;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 750ms ease-in-out;
+}
+
+.notification{
+    padding: 1.25rem;
+    border-radius: 35px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+.show{
+    opacity: 1;
+    transform: translateY(5rem);
+}
+
+@media(max-width: 700px){
+    .notification{
+        padding: 0.75rem;
+        font-size: 0.8rem;
+    }
+}

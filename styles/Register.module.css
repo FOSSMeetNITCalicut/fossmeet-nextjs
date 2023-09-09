@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 85vh;
+    padding: 3rem;
+}
+
+.iframe{
+    height: 85vh;
+    width: 100%;
+    border: 0;
+    padding-top: 0.62rem;
+}
+
+@media(max-width: 1024px){
+    .iframe{
+        padding-top: unset;
+    }
+}

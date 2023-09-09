@@ -1,0 +1,26 @@
+{
+  "name": "fosscell-meet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.4.0",
+    "bootstrap": "^5.2.3",
+    "next": "12.2.2",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "swiper": "^8.4.4",
+    "typed.js": "^2.0.12"
+  },
+  "devDependencies": {
+    "eslint": "8.20.0",
+    "eslint-config-next": "12.2.2"
+  }
+}

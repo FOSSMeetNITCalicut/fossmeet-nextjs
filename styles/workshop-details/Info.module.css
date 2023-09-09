@@ -1,0 +1,31 @@
+.info-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray);
+  border: solid rgba(128, 128, 128, 0.24) 0.15rem;
+  border-radius: 7px;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.1);
+  min-width: 350px;
+  /* width: 85%; */
+  min-height: 200px;
+}
+
+.info-heading {
+  margin-bottom: 1rem;
+}
+
+.info {
+  margin: 0.25rem 0;
+}
+
+.contact {
+  margin-top: 0.75rem;
+  font-size: small;
+}
+
+@media (max-width: 420px) {
+  .info-container {
+    min-width: 100%;
+  }
+}

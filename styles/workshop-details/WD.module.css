@@ -1,0 +1,26 @@
+.container {
+  /* padding: 2.75rem; */
+  display: flex;
+  flex-direction: column;
+}
+
+.about {
+  text-align: left;
+}
+
+.prereqContainer {
+  margin-top: 0.75rem;
+}
+
+.heading {
+  padding: 0.5rem 0;
+  text-decoration: underline;
+  text-decoration-color: #ff7700;
+  text-decoration-thickness: 2.3px;
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+.about {
+  font-weight: light;
+}

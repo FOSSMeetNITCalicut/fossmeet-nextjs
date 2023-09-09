@@ -1,0 +1,272 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.75rem 9rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  background: #f8f9fa;
+  border-radius: 15px;
+  border: 1px #d6d8e5 solid;
+  margin-bottom: 20px;
+  padding: 0.75rem;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  width: 100%;
+}
+
+.name {
+  font-size: 1.9rem;
+}
+
+.hosts {
+  font-size: 1.9rem;
+  margin-top: 10px;
+}
+
+.image_container,
+.wImageContainer {
+  margin: 10px;
+  /* width: 25%; */
+  display: flex;
+  justify-content: center;
+}
+
+.workshop-anchor {
+  width: 100%;
+}
+
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  border-right: 2px #d6d8e5 solid;
+  padding: 25px;
+
+  text-align: justify;
+
+  /* height: 370px; */
+  overflow: hidden;
+}
+
+.events {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.events > div > ul > li {
+  padding-top: 10px;
+}
+
+.summary-name {
+  display: none;
+}
+
+.description {
+  padding-top: 10px;
+}
+
+.personal-info {
+  margin: 25px;
+}
+.links {
+  display: flex;
+  gap: 10px;
+}
+.links > * {
+  cursor: pointer;
+  /* margin: 10px 0 10px 25px; */
+}
+.links > *:hover {
+  color: darkslategray;
+  transition: ease-in-out 100ms;
+}
+
+.Image {
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.stay-tuned {
+  margin: 20px 0;
+}
+.stay-tuned h3 {
+  color: var(--orange);
+  text-align: center;
+}
+
+.description-drop-icon {
+  display: none;
+  transition: 0.25s ease all;
+  margin-left: auto;
+  -webkit-tap-highlight-color: transparent;
+}
+.description-drop-icon:hover {
+  cursor: pointer;
+}
+.up-down {
+  transform: rotate(180deg);
+}
+.description-mob {
+  display: none;
+  border-top: 1px solid #d6d8e5;
+  margin-top: 5px;
+}
+.link-icon {
+  overflow: visible;
+}
+.wImage {
+  object-fit: contain;
+}
+
+@media (max-width: 1450px) {
+  .container {
+    padding: 1.75rem 5rem;
+  }
+  .image_container,
+  .wImageContainer {
+    margin: 20px;
+  }
+  .name,
+  .hosts {
+    font-size: 1.5rem;
+  }
+  .details,
+  .events {
+    font-size: 0.85rem;
+  }
+  .links {
+    gap: 7px;
+    margin: 15px 0px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .container {
+    padding: 1rem;
+  }
+  .card {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .image_container,
+  .wImageContainer {
+    margin: unset;
+    padding: 0.75rem;
+    width: 100%;
+    min-height: 325px;
+  }
+  .details {
+    border-right: none;
+    width: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    padding: 0.75rem;
+    text-align: left;
+  }
+  .Image {
+    object-fit: cover;
+  }
+  .links {
+    margin: 15px 0 0;
+  }
+  .link-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .personal-info {
+    margin: unset;
+    margin-bottom: 20px;
+  }
+  .events {
+    margin: unset;
+    padding: 0.75rem;
+    border-top: 2px #d6d8e5 solid;
+    width: 100%;
+  }
+}
+
+@media (max-width: 805px) {
+  .container {
+    padding: 1rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.3rem;
+  }
+  .image_container,
+  .wImageContainer {
+    padding: 0.1rem;
+    min-height: unset;
+    width: 23%;
+    max-width: 100px;
+    height: 90px;
+
+    align-self: center;
+  }
+  .wImageContainer {
+    align-self: flex-start;
+  }
+  .summary-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  .personal-info-web,
+  .details {
+    display: none;
+  }
+  .links {
+    gap: 2px;
+  }
+  .link-icon {
+    height: 15px;
+  }
+  .events {
+    padding: 0.4rem 0.5rem;
+    border: 0;
+    width: 77%;
+    font-size: 0.75rem;
+  }
+  .events > div > p {
+    padding: unset;
+  }
+  .events .talk {
+    display: none;
+  }
+  .description-mob {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  .events > div > ul > li {
+    padding-top: 5px;
+  }
+  .description-drop-icon {
+    display: block;
+  }
+  .hosts {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 805px) {
+  .personal-info-mob {
+    display: none;
+  }
+}

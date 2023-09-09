@@ -1,0 +1,74 @@
+.when {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 25px 0;
+
+  /* min-height: 100vh; */
+  background-color: #f8f9fa;
+}
+
+.when_heading {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  padding: 50px 0;
+}
+
+.when_heading h1 {
+  width: 75%;
+}
+
+.when_heading h4 {
+  width: 70%;
+}
+
+.when_button {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.when_image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img {
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .when {
+    padding-bottom: 0;
+  }
+  .when_heading {
+    width: 100%;
+  }
+
+  .when_heading h1 {
+    width: 100%;
+    padding: 0 25px;
+  }
+
+  .when_heading h3 {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .when_image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .when_heading h1 {
+    font-size: 1.5rem;
+  }
+}

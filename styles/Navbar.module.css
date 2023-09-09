@@ -1,0 +1,171 @@
+@keyframes slide-in {
+  from {
+    height: 0px;
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    height: 100%;
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.header {
+  background-color: black;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 4rem;
+  color: white;
+  z-index: 69;
+  box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.75);
+  height: 4.5rem;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active {
+  color: var(--orange);
+}
+
+.nav-link {
+  font-size: 1.15rem;
+  font-weight: 200;
+  color: white;
+  transition: all 0.25s ease-in-out;
+  padding: 0rem 1rem;
+}
+
+.nav-link:hover {
+  color: var(--orange);
+}
+
+.nav-logo {
+  width: 160px;
+  font-size: 1.3rem;
+  font-weight: 750;
+  color: white;
+  transition: all 0.25s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-logo:hover {
+  color: var(--orange);
+}
+
+.nav-link-logo {
+  margin: -10px 0px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger {
+  display: none;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+@media (max-width: 1000px){
+  .navbar{
+    padding: 0.6rem 3rem;
+  }
+  .nav-logo{
+    font-size: 1.1rem;
+  }
+  .nav-link{
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .navbar {
+    padding: 0.75rem 1.5rem;
+    height: 3.5rem;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.25s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color: var(--orange);
+    cursor: pointer;
+  }
+
+  .navbar-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    justify-content: space-between;
+    background-color: black;
+    animation-name: slide-in;
+    animation-duration: 300ms;
+  }
+
+  .nav-menu-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-link-mobile {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  .nav-link-mobile:hover {
+    color: var(--orange);
+  }
+}
