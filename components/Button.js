@@ -3,7 +3,7 @@ import Link from "next/dist/client/link";
 
 export default function Button({ text, toLink, onClickFunction }) {
   return (
-    <Link href={toLink && `${toLink}`}>
+    <Link href={toLink && `${toLink}`} target="_blank">
       <button
         className={styles.button}
         role="button"

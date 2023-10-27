@@ -22,6 +22,15 @@
     min-width: 135px;
 }
 
+.hero-proposal-button{
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    gap: 10px;
+    width: 30%;
+    min-width: 250px;
+}
+
 
 .heading{
     display:flex;
@@ -38,6 +47,10 @@
 .heading p{
     margin-top: 15px;
     font-size:32px;
+}
+
+.link{
+    color: rgb(42, 42, 76);
 }
 
 .image-container{

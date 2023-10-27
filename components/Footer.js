@@ -95,7 +95,8 @@ export default function Footer() {
       </div>
       <div className={`${styles["flex-row"]}`}>
         <p>
-          FOSSMeet&apos;23 - an event conducted by FOSSCell NITC
+          FOSSMeet&apos;23 - an event conducted by FOSSCell of National
+          Institute of Technology Calicut
         </p>
         <div className={styles["flex-row"]}>
           <Link href="https://facebook.com/profile.php?id=333141540396903">

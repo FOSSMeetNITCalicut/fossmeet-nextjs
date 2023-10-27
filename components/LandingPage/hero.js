@@ -21,20 +21,17 @@ function Hero() {
       </div> */}
       <div className={styles.heading}>
         <h1>
-          Thank you!
+          Coming Soon...
           {/* <br /> and Open. */}
         </h1>
         <p>
-          To our sponsors, speakers, participants and everyone involved in making FOSSMeet&apos;23 one to remember.
+          {/* To our sponsors, speakers, participants and everyone involved in making FOSSMeet&apos;23 one to remember. */}
         </p>
-        <div className={styles['hero-buttons']}>
+        {/* {Added custom class for button in home page} */}
+        <div className={styles['hero-proposal-button']}>
           <Button
-            text="Feedback"
-            toLink="/feedback"
-          />
-          <Button
-            text="Certificates"
-            toLink="https://certificates.fossmeet.net"
+            text="Submit your proposals"
+            toLink="https://hasgeek.com/fosscell/fossmeet24/"
           />
         </div>
       </div>
