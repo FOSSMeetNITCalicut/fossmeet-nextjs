@@ -36,7 +36,7 @@ export default function Navbar() {
       <nav className={styles["navbar"]}>
         <Link href="/">
           <a className={styles["nav-logo"]}>
-            <span className="typed">FOSSMeet&apos;23</span>
+            <span className="typed">FOSSMeet&apos;24</span>
           </a>
         </Link>
         <div className={styles["nav-menu"]}>
