@@ -30,6 +30,7 @@
   height: 4.5rem;
 }
 
+
 .bar {
   display: block;
   width: 25px;
@@ -37,7 +38,7 @@
   margin: 5px auto;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
-  background-color: #101010;
+  background-color: black;
 }
 
 .nav-menu {
@@ -93,6 +94,8 @@
 .hamburger {
   display: none;
 }
+
+
 
 .navbar-mobile {
   display: none;
@@ -167,5 +170,80 @@
 
   .nav-link-mobile:hover {
     color: var(--orange);
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-link-dropdown {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.dropdown-heading{
+  color: white;
+}
+
+.nav-link-dropdown:hover {
+  background-color: #fb8332;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-item{
+  padding-top: 10px;
+  padding-left: 5px;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 0;
+  top: 100%;
+  height: 145px;
+  padding-top: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+}
+
+.foss-logo{
+  width: 500px;
+}
+
+.dropdown-mobile-heading{
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .dropdown-heading{
+    display: none;
   }
 }
