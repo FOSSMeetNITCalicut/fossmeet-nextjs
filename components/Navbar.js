@@ -1,35 +1,21 @@
-import { useState, useEffect } from "react";
-import Button from "./Button";
+import { useState } from "react";
 import styles from "../styles/Navbar.module.css";
-import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import Image from "next/image";
-import Typed from "typed.js";
+import Link from "next/link";
+
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   const toggleButton = () => {
     setToggle(!toggle);
   };
 
-  // var options = {
-  //   strings: ["FOSSMeet&apos;23", "Feb 10-12", "1 day to go"],
-  //   typeSpeed: 80,
-  //   backSpeed: 60,
-  //   backDelay: 6000,
-  //   loop: true,
-  //   showCursor: false,
-  // };
-
-  // let typed;
-  // useEffect(() => {
-  //   typed = new Typed(".typed", options);
-
-  //   return () => {
-  //     typed.destroy();
-  //   };
-  // }, []);
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
+  };
 
   return (
     <header className={styles["header"]}>
@@ -39,34 +25,58 @@ export default function Navbar() {
             <span className="typed">FOSSMeet&apos;24</span>
           </a>
         </Link>
-        <div className={styles["nav-menu"]}>
-          <Link href="/gallery">
-            <a className={styles["nav-link"]}>Gallery</a>
-          </Link>
-          {/* <Link href="/feedback">
-            <a className={styles["nav-link"]}>Feedback</a>
-          </Link> */}
-          {/* <Link href="/schedule">
-            <a className={styles["nav-link"]}>Schedule</a>
-          </Link> */}
-          <Link href="/speakers">
-            <a className={styles["nav-link"]}>Speakers</a>
-          </Link>
-          <Link href="/workshops">
-            <a className={styles["nav-link"]}>Workshops</a>
-          </Link>
-          <Link href="/events">
-            <a className={styles["nav-link"]}>Events</a>
-          </Link>
-          {/* <Link href="/faqs">
-            <a className={styles["nav-link"]}>FAQ</a>
-          </Link> */}
-          {/* <Link href="code-of-conduct">
-            <a className={styles["nav-link"]}>Code of Conduct</a>
-          </Link> */}
+        <div className={styles["dropdown"]} onClick={toggleDropdown}>
+          <a className={styles["nav-link-dropdown", "dropdown-heading"]}>
+            FossMeet 23
+          </a>
+          {showDropdown && (
+            <div className={styles["dropdown-content"]}>
+              <ul className={styles["dropdown-menu"]}>
+                <li className={styles["dropdown-item"]}>
+                  <Link href="/gallery">
+                    <a
+                      className={styles["nav-link-dropdown"]}
+                      onClick={toggleButton}
+                    >
+                      Gallery
+                    </a>
+                  </Link>
+                </li>
+                <li className={styles["dropdown-item"]}>
+                  <Link href="/speakers">
+                    <a
+                      className={styles["nav-link-dropdown"]}
+                      onClick={toggleButton}
+                    >
+                      Speakers
+                    </a>
+                  </Link>
+                </li>
+                <li className={styles["dropdown-item"]}>
+                  <Link href="/workshops">
+                    <a
+                      className={styles["nav-link-dropdown"]}
+                      onClick={toggleButton}
+                    >
+                      Workshops
+                    </a>
+                  </Link>
+                </li>
+                <li className={styles["dropdown-item"]}>
+                  <Link href="/events">
+                    <a
+                      className={styles["nav-link-dropdown"]}
+                      onClick={toggleButton}
+                    >
+                      Events
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
         <div className={styles["flex-row"]}>
-          {/* <Button text="Register" toLink={"register"} /> */}
           <div className={styles["hamburger"]}>
             {toggle ? (
               <IoMdClose
@@ -88,98 +98,58 @@ export default function Navbar() {
       </nav>
       {toggle && (
         <div className={styles["navbar-mobile"]}>
-          <div className={styles["nav-menu-mobile"]}>
-            <Link href="/gallery">
-              <a
-                className={styles["nav-link-mobile"]}
-                onClick={() => {
-                  toggleButton();
-                }}
-              >
-                Gallery
-              </a>
-            </Link>
-            {/* <Link href="/feedback">
-              <a
-                className={styles["nav-link-mobile"]}
-                onClick={() => {
-                  toggleButton();
-                }}
-              >
-                Feedback
-              </a>
-            </Link> */}
-            {/* <Link href="/schedule">
-              <a
-                className={styles["nav-link-mobile"]}
-                onClick={() => {
-                  toggleButton();
-                }}
-              >
-                Schedule
-              </a>
-            </Link> */}
-            <Link href="/speakers">
-              <a
-                className={styles["nav-link-mobile"]}
-                onClick={() => {
-                  toggleButton();
-                }}
-              >
-                Speakers
-              </a>
-            </Link>
-            <Link href="/workshops">
-              <a
-                className={styles["nav-link-mobile"]}
-                onClick={() => {
-                  toggleButton();
-                }}
-              >
-                Workshops
-              </a>
-            </Link>
-            <Link href="/events">
-              <a
-                className={styles["nav-link-mobile"]}
-                onClick={() => {
-                  toggleButton();
-                }}
-              >
-                Events
-              </a>
-            </Link>
-            {/* <Link href="/faqs">
-              <a
-                className={styles["nav-link-mobile"]}
-                onClick={() => {
-                  toggleButton();
-                }}
-              >
-                FAQ
-              </a> 
-              </Link> */}
-            {/* <Link href="/media">
-              <a
-                className={styles["nav-link-mobile"]}
-                onClick={() => {
-                  toggleButton();
-                }}
-              >
-                Media
-              </a>
-            </Link> */}
-            {/* <Link href="/code-of-conduct">
-              <a
-                className={styles["nav-link-mobile"]}
-                onClick={() => {
-                  toggleButton();
-                }}
-              >
-                Code of Conduct
-              </a>
-            </Link> */}
+          <div className={styles["dropdown"]} onClick={toggleDropdown}>
+            <a className={styles["nav-link-dropdown", "dropdown-mobile-heading"]}>
+              FossMeet 23
+            </a>
+            {showDropdown && (
+              <div className={styles["dropdown-content"]}>
+                <ul className={styles["dropdown-menu"]}>
+                  <li className={styles["dropdown-item"]}>
+                    <Link href="/gallery">
+                      <a
+                        className={styles["nav-link-dropdown"]}
+                        onClick={toggleButton}
+                      >
+                        Gallery
+                      </a>
+                    </Link>
+                  </li>
+                  <li className={styles["dropdown-item"]}>
+                    <Link href="/speakers">
+                      <a
+                        className={styles["nav-link-dropdown"]}
+                        onClick={toggleButton}
+                      >
+                        Speakers
+                      </a>
+                    </Link>
+                  </li>
+                  <li className={styles["dropdown-item"]}>
+                    <Link href="/workshops">
+                      <a
+                        className={styles["nav-link-dropdown"]}
+                        onClick={toggleButton}
+                      >
+                        Workshops
+                      </a>
+                    </Link>
+                  </li>
+                  <li className={styles["dropdown-item"]}>
+                    <Link href="/events">
+                      <a
+                        className={styles["nav-link-dropdown"]}
+                        onClick={toggleButton}
+                      >
+                        Events
+                      </a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
+          <div className={styles["foss-logo"]}>
           <Link href="https://fosscell.org/">
             <a
               className={styles["nav-link-logo"]}
@@ -196,6 +166,7 @@ export default function Navbar() {
               />
             </a>
           </Link>
+          </div>
         </div>
       )}
     </header>
