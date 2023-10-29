@@ -9,7 +9,7 @@ export default function Layout({ children }) {
     <div>
 
       <Head>
-        <title>FOSSMeet&apos;23</title>
+        <title>FOSSMeet&apos;24</title>
         <meta name='description' content='FOSSMeet is an annual gathering to celebrate the 
         freedom in FOSS featuring exciting events,
         workshops, and brilliant speakers.' />
