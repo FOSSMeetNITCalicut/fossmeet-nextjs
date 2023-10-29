@@ -6,6 +6,7 @@ import {
   BsTwitter,
   BsLinkedin,
   BsMastodon,
+  BsTelegram,
 } from "react-icons/bs";
 export default function Footer() {
   return (
@@ -103,6 +104,9 @@ export default function Footer() {
           Institute of Technology Calicut
         </p>
         <div className={styles["flex-row"]}>
+          <Link href="https://t.me/foss_meet">
+            <BsTelegram className={styles["logo"]} size="20" />
+          </Link>
           <Link href="https://mastodon.social/@FOSSCell@floss.social">
             <BsMastodon className={styles["logo"]} size="20" />
           </Link>
