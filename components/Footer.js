@@ -2,10 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Footer.module.css";
 import {
-  BsFacebook,
   BsInstagram,
   BsTwitter,
-  BsYoutube,
   BsLinkedin,
   BsMastodon,
 } from "react-icons/bs";
