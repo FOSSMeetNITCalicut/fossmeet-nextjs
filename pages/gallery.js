@@ -32,11 +32,11 @@ const Media = () => {
     <div>
 
       <Head>
-				<title>FOSSMeet&apos;23</title>
+				<title>FOSSMeet&apos;24</title>
 				<meta name='description' content='FOSS Meet 2022-23' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-      <Banner title="Gallery" subtitle="FOSSMeet in Pictures" image="" />
+      <Banner title="Gallery" subtitle="FOSSMeet'23 in Pictures" image="" />
 
       <div className={`${styles.media_body} margin`}>
         <div className={styles.media_gallery}>

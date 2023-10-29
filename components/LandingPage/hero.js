@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../styles/LandingPage/Hero.module.css";
 import Image from "next/image";
 import logo from "../../public/images/assets/landing-page-illustration-1.svg";
+import Link from "next/link";
 import Notification from "../Notification";
 import Button from "../Button";
 function Hero() {
@@ -34,6 +35,13 @@ function Hero() {
             toLink="https://hasgeek.com/fosscell/fossmeet24/"
           />
         </div>
+        <div className={styles['hero-proposal-button']}>
+          <Button
+            text="FOSSMeet'23 Gallery"
+            toLink="/gallery"
+          />
+        </div>
+
       </div>
       <div className={styles["image-container"]}>
         <Image

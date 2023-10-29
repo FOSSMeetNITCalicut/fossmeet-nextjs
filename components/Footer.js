@@ -58,10 +58,44 @@ export default function Footer() {
             </a>
           </Link>
         </div>
+        <div>
+          <div className={styles["nav-menu"]}>
+            {/* <Link href="/competition" className={styles["nav-item"]}>
+              <a className={styles["nav-link"]}>Competition</a>
+            </Link>  */}
+            <Link href="/gallery" className={styles["nav-item"]}>
+              <a className={styles["nav-link"]}>Gallery</a>
+            </Link>
+            <Link href="/feedback" className={styles["nav-item"]}>
+              <a className={styles["nav-link"]}>Feedback</a>
+            </Link>
+            {/* <Link href="/schedule" className={styles["nav-item"]}>
+              <a className={styles["nav-link"]}>Schedule</a>
+            </Link> */}
+            <Link href="/speakers" className={styles["nav-item"]}>
+              <a className={styles["nav-link"]}>Speakers</a>
+            </Link>
+            <Link href="/workshops" className={styles["nav-item"]}>
+              <a className={styles["nav-link"]}>Workshops</a>
+            </Link>
+            <Link href="/events" className={styles["nav-item"]}>
+              <a className={styles["nav-link"]}>Events</a>
+            </Link>
+            {/* <Link href="/faqs" className={styles["nav-item"]}>
+              <a className={styles["nav-link"]}>FAQ</a>
+            </Link> */}
+            {/* <Link href="/media" className={styles["nav-item"]}>
+              <a className={styles["nav-link"]}>Media</a>
+            </Link> */}
+            {/* <Link href="/code-of-conduct" className={styles["nav-item"]}>
+              <a className={styles["nav-link"]}>Code of Conduct</a>
+            </Link> */}
+          </div>
+        </div>
       </div>
       <div className={`${styles["flex-row"]}`}>
         <p>
-          FOSSMeet&apos;23 - an event conducted by FOSSCell of National
+          FOSSMeet&apos;24 - an event conducted by FOSSCell of National
           Institute of Technology Calicut
         </p>
         <div className={styles["flex-row"]}>
