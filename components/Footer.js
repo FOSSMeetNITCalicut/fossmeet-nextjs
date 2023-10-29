@@ -63,15 +63,18 @@ export default function Footer() {
             {/* <Link href="/competition" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Competition</a>
             </Link>  */}
-            <Link href="/gallery" className={styles["nav-item"]}>
+            {/* <Link href="/schedule" className={styles["nav-item"]}>
+              <a className={styles["nav-link"]}>Schedule</a>
+            </Link> */}
+
+
+
+            {/* <Link href="/gallery" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Gallery</a>
             </Link>
             <Link href="/feedback" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Feedback</a>
             </Link>
-            {/* <Link href="/schedule" className={styles["nav-item"]}>
-              <a className={styles["nav-link"]}>Schedule</a>
-            </Link> */}
             <Link href="/speakers" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Speakers</a>
             </Link>
@@ -80,7 +83,9 @@ export default function Footer() {
             </Link>
             <Link href="/events" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>Events</a>
-            </Link>
+            </Link> */}
+
+
             {/* <Link href="/faqs" className={styles["nav-item"]}>
               <a className={styles["nav-link"]}>FAQ</a>
             </Link> */}
