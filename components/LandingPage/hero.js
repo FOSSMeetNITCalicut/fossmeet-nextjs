@@ -20,24 +20,44 @@ function Hero() {
           Registration ends Feb. 7<sup>th</sup> 11 PM
         </p>
       </div> */}
+
       <div className={styles.heading}>
-        <h1>
-          Coming Soon...
+        <div className={styles["logo-container"]}>
+          <Image
+            src={"/images/logos/logo_text.png"}
+            alt="FOSS Cell NITC"
+            className={styles.img}
+            height="479px"
+            width="1920px"
+          />
+        </div>
+        <h2 className={styles["date"]}>
+          AT NIT CALICUT | MARCH 15-17, 2024
           {/* <br /> and Open. */}
-        </h1>
+        </h2>
         <p>
           {/* To our sponsors, speakers, participants and everyone involved in making FOSSMeet&apos;23 one to remember. */}
         </p>
         {/* {Added custom class for button in home page} */}
+
         <div className={styles['hero-proposal-button']}>
           <Button
-            text="Submit your proposals"
-            toLink="https://hasgeek.com/fosscell/fossmeet24/"
+            text="Join Our Telegram Channel"
+            toLink="https://t.me/foss_meet"
+            className={styles['hero-button']}
           />
         </div>
         <div className={styles['hero-proposal-button']}>
           <Button
-            text="FOSSMeet'23 Gallery"
+            text="Submit Your Proposals"
+            toLink="https://hasgeek.com/fosscell/fossmeet24/"
+            className={styles['hero-button']}
+          />
+        </div>
+
+        <div className={styles['hero-proposal-button']}>
+          <Button
+            text="FOSSMeet'23 gallery"
             toLink="/gallery"
           />
         </div>
