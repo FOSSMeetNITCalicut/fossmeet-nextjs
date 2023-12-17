@@ -174,3 +174,20 @@
     display: none;
   }
 }
+
+
+
+.contact-us{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spacer{
+  height: 150px;
+}
+
+@media (max-width:600px) {
+   .spacer{
+    height: 100px;
+   }
+}
