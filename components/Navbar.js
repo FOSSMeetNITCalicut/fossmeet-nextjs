@@ -69,10 +69,13 @@ export default function Navbar() {
           {/* <Link href="code-of-conduct">
             <a className={styles["nav-link"]}>Code of Conduct</a>
           </Link> */}
+          <Link href="contact">
+            <a className={styles["nav-link"]}>Contact Us</a>
+          </Link>
         </div>
-        <div className={styles["flex-row"]}>
+        <div className={`${styles["flex-row"]} ${styles["hamburger"]}`}>
           {/* <Button text="Register" toLink={"register"} /> */}
-          {/* <div className={styles["hamburger"]}>
+          <div className={styles["hamburger"]}>
             {toggle ? (
               <IoMdClose
                 onClick={() => {
@@ -88,13 +91,13 @@ export default function Navbar() {
                 size="30"
               />
             )}
-          </div> */}
+          </div>
         </div>
       </nav>
       {toggle && (
         <div className={styles["navbar-mobile"]}>
           <div className={styles["nav-menu-mobile"]}>
-            <Link href="/gallery">
+            {/* <Link href="/gallery">
               <a
                 className={styles["nav-link-mobile"]}
                 onClick={() => {
@@ -103,7 +106,7 @@ export default function Navbar() {
               >
                 Gallery
               </a>
-            </Link>
+            </Link> */}
             {/* <Link href="/feedback">
               <a
                 className={styles["nav-link-mobile"]}
@@ -124,7 +127,7 @@ export default function Navbar() {
                 Schedule
               </a>
             </Link> */}
-            <Link href="/speakers">
+            {/* <Link href="/speakers">
               <a
                 className={styles["nav-link-mobile"]}
                 onClick={() => {
@@ -133,8 +136,8 @@ export default function Navbar() {
               >
                 Speakers
               </a>
-            </Link>
-            <Link href="/workshops">
+            </Link> */}
+            {/* <Link href="/workshops">
               <a
                 className={styles["nav-link-mobile"]}
                 onClick={() => {
@@ -143,8 +146,8 @@ export default function Navbar() {
               >
                 Workshops
               </a>
-            </Link>
-            <Link href="/events">
+            </Link> */}
+            {/* <Link href="/events">
               <a
                 className={styles["nav-link-mobile"]}
                 onClick={() => {
@@ -153,7 +156,7 @@ export default function Navbar() {
               >
                 Events
               </a>
-            </Link>
+            </Link> */}
             {/* <Link href="/faqs">
               <a
                 className={styles["nav-link-mobile"]}
@@ -184,6 +187,16 @@ export default function Navbar() {
                 Code of Conduct
               </a>
             </Link> */}
+            <Link href="/contact">
+              <a
+                className={styles["nav-link-mobile"]}
+                onClick={() => {
+                  toggleButton();
+                }}
+              >
+                Contact Us
+              </a>
+            </Link>
           </div>
           <Link href="https://fosscell.org/">
             <a

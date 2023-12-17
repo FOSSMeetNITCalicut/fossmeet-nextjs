@@ -41,8 +41,8 @@ const ContactInfo = () => {
               <BsFillTelephoneFill />
             </div>
             <p className={styles["contact-info__main__info__box__text"]}>
-              Abin : +91 90721 79971<br/>
-              Arjun: +91 79945 17527
+              Aftab : +91 94004 30812<br/>
+              Madhav: +91 98952 87476
             </p>
           </div>
         </div>
