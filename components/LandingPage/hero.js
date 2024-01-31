@@ -32,7 +32,7 @@ function Hero() {
           />
         </div>
         <h2 className={styles["date"]}>
-          AT NIT CALICUT | MARCH 15-17, 2024
+          AT NIT CALICUT | MARCH 22-24, 2024
           {/* <br /> and Open. */}
         </h2>
         <p>
