@@ -63,9 +63,9 @@ export default function Navbar() {
 
 
 
-          {/* <Link href="/faqs">
+          <Link href="/faqs">
             <a className={styles["nav-link"]}>FAQ</a>
-          </Link> */}
+          </Link>
           {/* <Link href="code-of-conduct">
             <a className={styles["nav-link"]}>Code of Conduct</a>
           </Link> */}
