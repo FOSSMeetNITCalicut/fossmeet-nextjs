@@ -31,10 +31,11 @@ function Hero() {
             width="1920px"
           />
         </div>
-        <h2 className={styles["date"]}>
-          AT NIT CALICUT | MARCH 22-24, 2024
+        <h3 className={styles["date"]}>
+          @ NIT CALICUT  <br />
+          MARCH 22-24, 2024
           {/* <br /> and Open. */}
-        </h2>
+        </h3>
         <p>
           {/* To our sponsors, speakers, participants and everyone involved in making FOSSMeet&apos;23 one to remember. */}
         </p>
